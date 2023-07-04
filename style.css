@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 14);
+    display: flex;
+    flex-direction: row;
+    text-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 1s ease;
+}
+nav a:hover{
+    color: blue;
+    background-color: white;
+    -webkit-box-shadow: 1px 18px 54px -4px rgba(253, 252, 252, 0.75);
+    -moz-box-shadow: 1px 18px 54px -4px rgba(254, 253, 253, 0.75);
+    box-shadow: 1px 18px 54px -4px rgba(255, 254, 254, 0.75);
+}
+#presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(252, 252, 252);
+}
+#presentation div{
+    display: flex;
+    flex-direction: column;
+}
+#skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#skills h1{
+    margin-left: 2%;
+    font-size: 2.4rem;
+}
+.skill_container{
+    margin-top: 30px;
+    margin-left: 5%;
+    width: 90%;
+    height: 150px;
+    overflow-x: hidden;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.container_wrapper h2{
+    margin-left: 5%;
+    margin-top: 15px;
+}
+.skilltrack{
+    width: fit-content;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+.individual_skill {
+    background-color: lightgray;
+    width: 100px;
+    height: 80px;
+    margin: 25px;
+    cursor: grab; /* Torna os itens arrastáveis */
+  }
+.button_left{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position:absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.button_right{
+    width: 50px;
+    height: 50px;
+    background-color:brown;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 32px;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+@media(max-width = 500px){
+    .button_right{
+        right: 90%;
+    }
+}
