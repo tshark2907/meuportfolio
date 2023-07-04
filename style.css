@@ -56,6 +56,8 @@ nav a:hover{
     margin-top: 30px;
     margin-left: 5%;
     width: 90%;
+    border: 1px solid red;
+    position: relative;
     height: 150px;
     overflow-x: hidden;
     display: flex;
@@ -82,7 +84,8 @@ nav a:hover{
     width: 100px;
     height: 80px;
     margin: 25px;
-    cursor: grab; /* Torna os itens arrastáveis */
+    cursor: grab;
+    transition: all 1s ease;
   }
 .button_left{
     width: 50px;
@@ -110,4 +113,9 @@ nav a:hover{
     .button_right{
         right: 90%;
     }
+}
+img{
+    height: 50px;
+    position: absolute;
+    left: 100px;
 }
