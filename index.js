@@ -22,27 +22,44 @@ botoesSkill.forEach(botao => {
       }
     } else if (idBotao === 'button_3' || idBotao === 'button_4') {
       const track = document.querySelector('#skilltrack_2');
-      if (idBotao === 'button_3') {
-        track.style.transform = `translateX(-${containerSize}px)`;
-      }
       if (idBotao === 'button_4') {
-        track.style.transform = `translateX(-${containerSize}px)`;
+        if (positions[1] > -(containerSize * (track.childElementCount - 7))) {
+          positions[1] -= containerSize;
+          track.style.transform = `translateX(${positions[1]}px)`;
+        }
+      }
+      if (idBotao === 'button_3') {
+        if (positions[1] < 0) {
+          positions[1] += containerSize;
+          track.style.transform = `translateX(${positions[1]}px)`;
+        }
       }
     } else if (idBotao === 'button_5' || idBotao === 'button_6') {
       const track = document.querySelector('#skilltrack_3');
-      if (idBotao === 'button_5') {
-        track.style.transform = `translateX(${containerSize}px)`;
-      }
       if (idBotao === 'button_6') {
-        track.style.transform = `translateX(-${containerSize}px)`;
+        if (positions[2] > -(containerSize * (track.childElementCount - 7))) {
+          positions[2] -= containerSize;
+          track.style.transform = `translateX(${positions[2]}px)`;
+        }
+      }
+      if (idBotao === 'button_5') {
+        if (positions[2] < 0) {
+          positions[2] += containerSize;
+          track.style.transform = `translateX(${positions[2]}px)`;
+        }
       }
     } else if (idBotao === 'button_7' || idBotao === 'button_8') {
-      const track = document.querySelector('#skilltrack_4');
-      if (idBotao === 'button_7') {
-        track.style.transform = `translateX(${containerSize}px)`;
-      }
       if (idBotao === 'button_8') {
-        track.style.transform = `translateX(-${containerSize}px)`;
+        if (positions[3] > -(containerSize * (track.childElementCount - 7))) {
+          positions[3] -= containerSize;
+          track.style.transform = `translateX(${positions[3]}px)`;
+        }
+      }
+      if (idBotao === 'button_7') {
+        if (positions[3] < 0) {
+          positions[3] += containerSize;
+          track.style.transform = `translateX(${positions[3]}px)`;
+        }
       }
     }
   });
