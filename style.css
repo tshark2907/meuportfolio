@@ -53,7 +53,7 @@ nav a:hover{
     font-size: 2.4rem;
 }
 .skill_container{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 5%;
     width: 90%;
     border: 1px solid red;
@@ -78,36 +78,104 @@ nav a:hover{
     align-items: center;
     white-space: nowrap;
     position: relative;
+    transition: all 0.5s ease;
 }
 .individual_skill {
     background-color: lightgray;
     width: 100px;
     height: 80px;
-    margin: 25px;
+    margin-right: 10px;
     cursor: grab;
-    transition: all 1s ease;
+    position: relative;
   }
-.button_left{
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    position:absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50px;
-    transform: translate(-50%,-50%);
-    cursor: pointer;
-}
-.button_right{
-    width: 50px;
-    height: 50px;
-    background-color:brown;
+.track{
+    width: 100%;
+    height: 2px;
+    background-color: black;
     position: absolute;
-    z-index: 1;
+    top: 70%;
+}
+#check{
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#loading {
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation: spin 5s linear infinite; /* Adiciona a animação "spin" com duração de 5 segundos e repetição infinita */
+}  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.skill_name{
+    font-size: 0.85rem;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+} 
+.button_left{
+    background-color: green;
     top: 50%;
-    right: 32px;
-    transform: translate(0%,-50%);
+    left: 5px;
+    transform: translate(-50%,-50%);
+}
+.button {
+    justify-self: center;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    position: absolute;
     cursor: pointer;
+    background-color: #007bff; 
+    border: none;
+    opacity: 0.6;
+  }
+  
+  .button i {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+.button_right{ 
+    top: 50%;
+    right: -10px;
+    transform: translate(0%,-50%);
+}
+.skill_title{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 10px auto;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+#projects{
+    display: block;
+    height: 600px;
+    background-color: aquamarine;
 }
 @media(max-width = 500px){
     .button_right{
@@ -115,7 +183,7 @@ nav a:hover{
     }
 }
 img{
-    height: 50px;
-    position: absolute;
-    left: 100px;
+    height: 65px;
 }
+
+

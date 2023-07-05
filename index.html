@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Thiago Alvarenga</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script defer type="text/javascript" src="/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
@@ -26,19 +27,40 @@
             <span>Veja abaixo meus projetos e como posso te ajudar</span>
         </div>
     </section>
+
+    <section id="projects">
+        <div class="project1"></div>
+        <div class="project2"></div>
+        <div class="project3"></div>
+    </section>
+
     <section id="skills">
 
         <h1>Habilidades</h1>
 
         <div class="container_wrapper">
-            <h2>HTML + CSS</h2>
-            <img src="/assets/html.png">
-            <img src="/assets/css.png">
+                <div class="skill_title">
+                    <h2>HTML + CSS</h2>
+                    <div class="imgs">
+                        <img src="/assets/html.png">
+                        <img src="/assets/css.png">
+                    </div>
+                    </div>
                 <div class="skill_container">
-                    <div id="button_1" class="button button_left"></div>
+                    <span id="button_1" class="material-symbols-outlined button button_left">
+                        <i class="material-icons">arrow_back_ios</i>
+                    </span>
                     <div id="skilltrack_1" class="skilltrack">
-                        <div class="individual_skill">1</div>
-                        <div class="individual_skill">2</div>
+                        <div class="individual_skill">
+                            <span class="skill_name">Habilidade 1</span>
+                            <div class="track"></div>
+                            <span id="check" class="material-symbols-outlined">check_circle</span>
+                        </div>
+                        <div class="individual_skill">
+                            <span class="skill_name">Habilidade 2</span>
+                            <div class="track"></div>
+                            <span id="loading" class="material-symbols-outlined">progress_activity</span>
+                        </div>
                         <div class="individual_skill">3</div>
                         <div class="individual_skill">4</div>
                         <div class="individual_skill">5</div>
@@ -56,15 +78,21 @@
                         <div class="individual_skill">8</div>
                         <div class="individual_skill">9</div>
                     </div>    
-                    <div id="button_2" class="button button_right"></div>
+                    <div id="button_2" class="material-symbols-outlined button button_right">
+                        <i class="material-icons">arrow_forward_ios</i>
+                    </div>
                 </div>
             </div> 
 
             <div class="container_wrapper">
-                <h2>Javascript</h2>
-                <img src="/assets/javascript.png">
+                    <div class="skill_title">
+                        <h2>Javascript</h2>
+                        <img src="/assets/javascript.png">
+                    </div>
                     <div class="skill_container">
-                        <div id="button_3" class="button button_left"></div>
+                        <span id="button_3" class="material-symbols-outlined button button_left">
+                            <i class="material-icons">arrow_back_ios</i>
+                        </span>
                         <div id="skilltrack_2" class="skilltrack">
                             <div class="individual_skill">1</div>
                             <div class="individual_skill">2</div>
@@ -76,15 +104,21 @@
                             <div class="individual_skill">8</div>
                             <div class="individual_skill">9</div>
                         </div>    
-                        <div id="button_4" class="button button_right"></div>
+                        <div id="button_4" class="material-symbols-outlined button button_right">
+                            <i class="material-icons">arrow_forward_ios</i>
+                        </div>
                 </div>
             </div> 
 
             <div class="container_wrapper">
-                <h2>Node JS</h2>
-                <img src="/assets/nodejs.png">
+                    <div class="skill_title">
+                        <h2>Node JS</h2>
+                        <img src="/assets/nodejs.png">
+                    </div>
                     <div class="skill_container">
-                        <div id="button_5" class="button button_left"></div>
+                        <span id="button_5" class="material-symbols-outlined button button_left">
+                            <i class="material-icons">arrow_back_ios</i>
+                        </span>
                         <div id="skilltrack_3" class="skilltrack">
                             <div class="individual_skill">1</div>
                             <div class="individual_skill">2</div>
@@ -96,15 +130,21 @@
                             <div class="individual_skill">8</div>
                             <div class="individual_skill">9</div>
                         </div>    
-                        <div id="button_6" class="button button_right"></div>
+                        <div id="button_6" class="material-symbols-outlined button button_right">
+                            <i class="material-icons">arrow_forward_ios</i>
+                        </div>
                 </div>
             </div> 
 
             <div class="container_wrapper">
-                <h2>SQL</h2>
-                <img src="/assets/sql.png">
+                    <div class="skill_title">
+                        <h2>SQL</h2>
+                        <img src="/assets/sql.png">
+                    </div>
                     <div class="skill_container">
-                        <div id="button_7" class="button button_left"></div>
+                        <span id="button_7" class="material-symbols-outlined button button_left">
+                            <i class="material-icons">arrow_back_ios</i>
+                        </span>
                         <div id="skilltrack_4" class="skilltrack">
                             <div class="individual_skill">1</div>
                             <div class="individual_skill">2</div>
@@ -116,15 +156,13 @@
                             <div class="individual_skill">8</div>
                             <div class="individual_skill">9</div>
                         </div>    
-                        <div id="button_8" class="button button_right"></div>
+                        <div id="button_8" class="material-symbols-outlined button button_right">
+                            <i class="material-icons">arrow_forward_ios</i>
+                        </div>
                 </div>
             </div> 
     </section>
-    <section id="projects">
-        <div class="project1"></div>
-        <div class="project2"></div>
-        <div class="project3"></div>
-    </section>
+    
     <section id="repository">
         <div class="github"></div>
         <div class="codepen"></div>
