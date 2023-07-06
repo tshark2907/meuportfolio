@@ -36,7 +36,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 450px;
     background-color: rgb(252, 252, 252);
 }
 #presentation div{
@@ -56,7 +56,13 @@ nav a:hover{
     margin-top: 10px;
     margin-left: 5%;
     width: 90%;
-    border: 1px solid red;
+    background-color: #042c58;
+    -webkit-border-radius: 10px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-radius: 10px;
+    -moz-border-radius-bottomright: 30px;
+    border-radius: 10px;
+    border-bottom-right-radius: 30px;
     position: relative;
     height: 150px;
     overflow-x: hidden;
@@ -79,19 +85,20 @@ nav a:hover{
     white-space: nowrap;
     position: relative;
     transition: all 0.5s ease;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .individual_skill {
-    background-color: lightgray;
-    width: 100px;
+    width: 80px;
     height: 80px;
-    margin-right: 10px;
+    margin-left: 30px;
     cursor: grab;
     position: relative;
   }
 .track{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     position: absolute;
     top: 70%;
 }
@@ -122,6 +129,7 @@ nav a:hover{
   }
 .skill_name{
     font-size: 0.85rem;
+    color: white;
     position: absolute;
     left: 50%;
     top: 30%;
@@ -145,9 +153,7 @@ nav a:hover{
     cursor: pointer;
     background-color: #007bff; 
     border: none;
-    opacity: 0.6;
-  }
-  
+  } 
   .button i {
     font-size: 16px;
     line-height: 30px;
@@ -177,13 +183,97 @@ nav a:hover{
     height: 600px;
     background-color: aquamarine;
 }
-@media(max-width = 500px){
-    .button_right{
-        right: 90%;
+#about {
+    width: 80%;
+    height: 400px;
+    -webkit-border-radius: 50px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius: 50px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: darkcyan;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .profile_frame {
+    width: 300px;
+    max-width: 40%;
+    height: 80%;
+    background-color: grey;
+  }
+  
+  .about_holder {
+    max-width: 60%;
+    width: 50%;
+    height: 80%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .about_text {
+    font-size: 0.775rem;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    text-align: justify;
+  }
+  .about_holder h2{
+    position: absolute;
+    top: 10px;
+  }
+  
+@media(max-width: 400px){
+    .profile_frame{
+        display: none;
+    }
+    .about_holder{
+        max-width: none;
+        width: 90%;
+    }
+    .about_text{
+        font-size: 0.75rem;
+        width: 250px;
+    }
+    .about_holder h2{
+        font-size: 1rem;
+      }
+    .skill_container{
+        transform: scale(0.95);
+    }
+    .skill_title{
+        transform: scale(0.7);
+    }
+    #skills h1{
+        font-size: 0.9rem;
+        display: inline;
+        margin-left: 25%;
+    }
+    #presentation h1{
+        font-size: 1.2rem;
+    }
+    #presentation span{
+        font-size: 0.9rem;
+        width: 90%;
     }
 }
 img{
     height: 65px;
+}
+.hangloose{
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
