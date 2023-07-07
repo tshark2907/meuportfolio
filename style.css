@@ -180,7 +180,7 @@ nav a:hover{
 }
 #projects{
     display: block;
-    height: 600px;
+    height: fit-content;
     background-color: aquamarine;
 }
 #about {
@@ -266,6 +266,20 @@ nav a:hover{
         font-size: 0.9rem;
         width: 90%;
     }
+    #project_1,#project_2{
+        border-radius: 10px 10px 10px 10px;
+    }
+    #project_1{
+        flex-direction: column;
+    }
+    #project_2{
+        flex-direction: column-reverse;
+    }
+    #project_1:nth-child(1),#project_2:nth-child(2),#explanation{
+        width: 100%;
+        height: auto;
+        font-size: 0.8rem;
+    }
 }
 img{
     height: 65px;
@@ -274,6 +288,90 @@ img{
     height: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+@keyframes hang {
+    20%{
+        transform:rotate(10deg);
+    }
+    40%{
+        transform:rotate(-10deg)
+    }
+    60%{
+        transform: rotate(10deg);
+    }
+    80%{
+        transform:rotate(-10deg)
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+.hangloose:hover{
+    animation: hang 1s ease;
+}
+.project_container{
+    width: 80%;
+    height: 100%;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    background-color: salmon;
+}
+.project_container h2{
+    margin-left: 20px;
+}
+.project{
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(169, 138, 236);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+.preview{
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mockups{
+    width: 90%;
+    height: 80%;
+    background-color: aquamarine;
+    display: flex;
+}
+.mockups :nth-child(1){
+    width: 100%;
+    height: 100%;
+}
+.credits{
+    font-size: 0.5rem;
+}
+.disclaimer_holder{
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+    margin: auto;
+    text-align: justify;
+}
+.disclaimer_holder span{
+    display: inline;
+    height: 100%;
+    
+}
+#project_1{
+    border-radius: 10px 30px 10px 30px;
+}
+#project_1 .preview{
+    border-radius: 10px 0px 0px 30px / 10px 18px 0px 30px;
+}
+#project_2{
+    border-radius: 30px 10px 30px 10px;
+}
+#project_2 .preview{
+    border-radius: 0px 10px 30px 0px;
 }
 
 
