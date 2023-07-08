@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt/br">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Thiago Alvarenga</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/favicon.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script defer type="text/javascript" src="/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -15,7 +16,7 @@
         <nav>
             <a href="/index.html">Início</a>
             <a href="#projects">Projetos</a>
-            <a href="#repositories">Repositórios</a>
+            <a href="#repository">Repositórios</a>
             <a href="#contact">Contato</a>
         </nav>
     </header>
@@ -30,7 +31,15 @@
 
     <section id="about">
         <div class="profile_frame">
-            <img class="profile_pic">
+            <a href="https://www.linkedin.com/in/thiagoalvarenga2907">
+                <div class="linkedin_goto">
+                    <div class="mini_profile">
+                        <div class="mini_profile_pic"></div>
+                    </div>
+                    <span>Clique aqui pra visitar meu linkedin</span>
+                </div>
+            </a>
+            <img src="/assets/Foto Thiago.png" class="profile_pic">
         </div>
         <div class="about_holder">
             <h2>Sobre mim</h2>
@@ -42,30 +51,22 @@
         <div class="project_container">
             <h2>Meus projetos</h2>
             <div id="project_1" class="project">
-                <div class=" preview">
+                <div id="preview_1" class=" preview">
                     <div class="mockups">
-                        <img src="/assets/mockups.png" alt="Diferentes versões do site">
-                    </div>
-                    <div class="credits">
-                        <a class="phone_preview" href="https://www.freepik.com/free-vector/realistic-front-view-smartphone-mockup-mobile-iphone-purple-frame-with-blank-white-display-vector_33632332.htm#query=mockup%20phone&position=2&from_view=keyword&track=ais">Image by svstudioart</a> on Freepik
-                        <a class="tablet_preview" href="https://www.freepik.com/free-psd/tablet-mock-up-isolated_4075554.htm#query=mockup%20tablet&position=5&from_view=search&track=ais">Image by zlatko_plamenov</a> on Freepik
+                        <img src="/assets/alvarenga games.png" alt="Diferentes versões do site">
                     </div>
                 </div>
-                <div id="explanation" class="disclaimer_holder">
-                    <span>Meu primeiro projeto, uma e-shop criada pra ser integrada facilmente a um sistema de gerenciamento de conteudos, que faria tal integração com base em um arquivo JSON. Clique <a href="https:www.github.com/tshark2907/AlvarengaGamesMain">aqui</a> para ver este projeto no Github!</span>
+                <div id="explanation_1" class="disclaimer_holder">
+                    <span>Meu primeiro projeto, uma e-shop criada pra ser integrada facilmente a um sistema de gerenciamento de conteudos, que faria tal integração com base em um arquivo JSON. Clique <a class="direct_link" href="https:www.github.com/tshark2907/AlvarengaGamesMain">aqui</a> para ver este projeto no Github!</span>
                 </div>
             </div>
             <div id="project_2" class="project">
-                <div id="explanation" class="disclaimer_holder">
-                    <span>Meu segundo projeto, sendo este um trabalho pra faculdade, trata-se de uma aplicação web de sistema de pesquisas facilmente integrável com bancos de dados diversos, com o intuito de diminuir o numero de golpes que ocorrem na internet. Clique <a href="https://github.com/tshark2907/TrabalhoUPX1">aqui</a> para ver este projeto no Github!</span>
+                <div id="explanation_2" class="disclaimer_holder">
+                    <span>Meu segundo projeto, sendo este um trabalho pra faculdade, trata-se de uma aplicação web de sistema de pesquisas facilmente integrável com bancos de dados diversos, com o intuito de diminuir o numero de golpes que ocorrem na internet. Clique <a class="direct_link" href="https://github.com/tshark2907/TrabalhoUPX1">aqui</a> para ver este projeto no Github!</span>
                 </div>
-                <div class="preview">
+                <div id="preview_2" class="preview">
                     <div class="mockups">
-                        <img src="/assets/mockups.png" alt="Diferentes versões do site">
-                    </div>
-                    <div class="credits">
-                        <a class="phone_preview" href="https://www.freepik.com/free-vector/realistic-front-view-smartphone-mockup-mobile-iphone-purple-frame-with-blank-white-display-vector_33632332.htm#query=mockup%20phone&position=2&from_view=keyword&track=ais">Image by svstudioart</a> on Freepik
-                        <a class="tablet_preview" href="https://www.freepik.com/free-psd/tablet-mock-up-isolated_4075554.htm#query=mockup%20tablet&position=5&from_view=search&track=ais">Image by zlatko_plamenov</a> on Freepik
+                        <img src="/assets/catafraudes.png" alt="Diferentes versões do site">
                     </div>
                 </div>
             </div>
@@ -270,15 +271,57 @@
                 </div>
             </div> 
     </section>
+
+    <section id="courses">
+        <h2>Cursos</h2>
+        <div class="newton">
+            <img class="newton_logo logo" src="/assets/logo newton.png" alt="Logo Newton Paiva">
+            <span class="course_disclaimer">Análise e Desenvolvimento de Sistemas Newton Paiva<br>Conclusão prevista para agosto de 2025</span>
+        </div>
+        <div class="onebitcode">
+            <img class="obc_logo logo" src="/assets/logo onebitcode.png" alt="Logo One Bit Code">
+            <span class="course_disclaimer">Curso FullStack Javascript OneBitCode<br>Conclusão prevista para dezembro 2023</span>
+        </div>
+    </section>
+
+    <section id="bootcamps">
+        <h2>Bootcamps e treinamentos</h2>
+        <div class="gama">
+            <img class="gama_logo logo" src="/assets/logo gama academy.png" alt="Logo Gama Academy">
+            <span class="course_disclaimer">Programa de treinamento Hiring Coders #1<br>Concluido em 2020</span>
+        </div>
+    </section>
     
     <section id="repository">
-        <div class="github"></div>
-        <div class="codepen"></div>
-        <div class="replit"></div>
+        <h2>Repositórios</h2>
+        <a class="github" href="https://github.com/tshark2907">
+                <img class="github_logo logo" src="/assets/logo github.png" alt="Logo Github">
+                <span class="repository_disclaimer">Veja aqui alguns dos meus projetos do GitHub</span>
+                <div class="projects_holder"></div>
+        </a>
+         <a class="codepen" href="https://codepen.io/tshark2907">
+            <img class="codepen_logo logo" src="/assets/logo gitpen.png" alt="Logo CodePen">
+            <span class="repository_disclaimer">Veja aqui alguns dos meus projetos do CodePen</span>
+            <div class="projects_holder"></div>
+         </a>
+         <a class="codewars" href="https://www.codewars.com/users/tshark2908">
+                <img class="codewars_logo logo" src="/assets/logo codewars.png" alt="Logo Codewars">
+                <span class="repository_disclaimer">Veja aqui alguns dos meus exercícios resolvidos no Codewars</span>
+                <div class="projects_holder"></div>
+            </a>
     </section>
+
     <footer id="contact">
-        <div class="linkedin"></div>
-        <div class="whatsapp"></div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/thiagoalvarenga2907">
+                <img class="linkedin_logo contact_logo" src="/assets/linkedin.png" alt="Linkedin Logo">
+            </a>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/5531994182858">
+                <img class="whatsapp_logo contact_logo" src="/assets/whatsapp.png" alt="Whatsapp Logo">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

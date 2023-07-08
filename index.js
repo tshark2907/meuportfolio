@@ -1,6 +1,19 @@
 let botoesSkill = document.querySelectorAll('.button');
+let perfil = document.querySelector('.profile_pic');
+let frame = document.querySelector('.profile_frame');
+let linkedinMini = document.querySelector('.linkedin_goto');
 let containerSize = 100;
 let positions = [0, 0, 0, 0];
+
+frame.addEventListener('mouseenter', () => {
+perfil.style.display = 'none';
+linkedinMini.style.display = 'inline-block';
+})
+
+frame.addEventListener('mouseleave', () => {
+  perfil.style.display = 'inline';
+  linkedinMini.style.display = 'none';
+  })
 
 botoesSkill.forEach(botao => {
   botao.addEventListener('click', function() {
