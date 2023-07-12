@@ -221,7 +221,6 @@ nav a:hover{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    display: none;
   }
   .linkedin_goto span{
     position: absolute;
@@ -257,6 +256,9 @@ nav a:hover{
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
+  }
+  .profile_pic{
+    display: hidden;
   }
   .about_holder {
     color: white;
